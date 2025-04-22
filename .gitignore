@@ -48,3 +48,6 @@ api.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Cursor IDE
+.cursor/
