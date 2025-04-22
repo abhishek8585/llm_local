@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Role of cursor
+1. As an AI expert developer, create a complete Python hackathon project with test cases included for validation and demonstration purposes.
+
+These conventions should be maintained everytime any changes are done.
+
+# Tech Stack used in this project
+1. Always use Python 3.12 and create a dotfile to pin this version.
+2. Use UV as python package manager.
+3. Run all Python terminal scripts using 'uv run'.
+4. Always add dependencies using 'uv add <package>'; **do not use** 'uv pip install'.
+5. Do not use 'requirements.txt' for dependencies. Use 'pyproject.toml' as managed by UV.
+6. Use Streamlit for web user interface https://docs.streamlit.io
+7. Use FastAPI for creating API endpoints https://fastapi.tiangolo.com/
+8. Read the official documentation for all frameworks and understand them well. Follow examples for best practices and code structure.
+
+# Code generation instructions:
+1. Do not over engineer the project. Keep the focus and take a deep breath before changing any other files.
+2. Use the KISS principle and keep the code simple and concise. Dont use one liner for creating loops nless nessceary.
+3. Do not have files longer than 220 tines of code otherwise refactor them into smaller modules.
+4. The project should be well structured using good conventions. Use the project structure using popular conventions like keeping frontend and backend module folders and having a src directory for each module.
+5. Look at the documentation for all libraries and dependencies used in the project and use them wisely.
+6. After restarting this project, always reload this file and remember at the project context.
+7. Keep a detailed changelog of all changes made to the project in a separate Changelog.md file and keep it updated after every major change.
+8. After any successful feature completion and test verification, ask me to commit the changes to git and with a detailed commit message.
+9. Generate a .env file for keeping OPENAI API keys. Load this file as configuration settings.
+10. Please write comments at the top of each file to explain what the file does, including its inputs and outputs.
+Also, add comments above each class, method, and key statement to describe its functionality.
+
+# Code documentation:
+1. Use meaningful variable names and docstrings.
+2. Use type hints for function parameters and return type.
+3. Use Markdown formatting for documentation.
+4. Use Markdown formatting for README.md.
+5. Use Markdown formatting for project documentation.
+6. Use Markdown formatting for test documentation.
+7. Use Markdown formatting for benchmark documentation.
+8. Use Markdown formatting for coverage documentation.
+9. Use Markdown formatting for mock documentation.
+
+# Guardrails and Developer DO and DONT
+1. Create only one feature at a time with detailed tests and final verification before moving to next feature. Once feature is finished then stop.
+2. Suggest a detailed git commit message after a feature is finished by reflecting on all changed code and files.
+3. Stop, Prompt and Ask every time a feature is finished before continuing.
+4. Never do git commits by yourself. This wilt be done only by me.
+5. Always add the `.cursor/` directory to `.gitignore` to avoid committing AI-specific metadata.
+6. Add the contents of the `/data/` directory to `.gitignore`, but keep the directory and subdirectory structure tracked by Git (e.g., using `.gitkeep`).
